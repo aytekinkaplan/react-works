@@ -1,0 +1,141 @@
+.tweet {
+  display: flex;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e1e8ed;
+  transition: background-color 0.2s;
+}
+
+.tweet:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.tweet-avatar {
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.tweet-avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.tweet-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.tweet-header {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.tweet-username {
+  font-weight: 700;
+  font-size: 15px;
+  color: #14171a;
+  margin-right: 4px;
+}
+
+.tweet-handle,
+.tweet-date {
+  color: #657786;
+  font-size: 15px;
+}
+
+.tweet-handle::before {
+  content: "@";
+}
+
+.tweet-date::before {
+  content: "·";
+  margin: 0 4px;
+}
+
+.tweet-text {
+  margin-top: 4px;
+  font-size: 15px;
+  line-height: 1.3125;
+  overflow-wrap: break-word;
+  color: #14171a;
+}
+
+.tweet-image {
+  margin-top: 10px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.tweet-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tweet-actions {
+  display: flex;
+  justify-content: space-between;
+  max-width: 425px;
+  margin-top: 12px;
+}
+
+.tweet-action {
+  background: none;
+  border: none;
+  color: #657786;
+  font-size: 13px;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.tweet-action span {
+  margin-left: 8px;
+}
+
+.tweet-action:hover {
+  color: #1da1f2;
+}
+
+.tweet-action.reply:hover {
+  color: #1da1f2;
+}
+
+.tweet-action.retweet:hover,
+.tweet-action.retweet.active {
+  color: #17bf63;
+}
+
+.tweet-action.like:hover,
+.tweet-action.like.active {
+  color: #e0245e;
+}
+
+.tweet-action.share:hover {
+  color: #1da1f2;
+}
+
+@media (max-width: 480px) {
+  .tweet {
+    padding: 8px 12px;
+  }
+
+  .tweet-avatar img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tweet-text,
+  .tweet-username,
+  .tweet-handle,
+  .tweet-date {
+    font-size: 14px;
+  }
+
+  .tweet-action {
+    font-size: 12px;
+  }
+}
