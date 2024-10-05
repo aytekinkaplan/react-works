@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Markdown Renderer</title>
+    <!-- CSS Dosyasını dahil ediyoruz -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Markdown içeriğinin yükleneceği alan -->
     <div id="content"></div>
+
+    <!-- Marked.js kütüphanesini ekliyoruz -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <!-- External bundle.js dosyasını çağırıyoruz -->
     <script src="bundle.js"></script>
