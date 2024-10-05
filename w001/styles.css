@@ -52,15 +52,18 @@ ol {
   padding-left: 20px;
 }
 
+ul li, ol li {
+  margin-bottom: 10px; /* Liste elemanları arasında boşluk */
+}
+
 /* Kod blokları */
 pre {
-  height: 60vm;
   margin: 20px 0;
   white-space: pre-wrap;
   font-weight: bold;
-  color: #ddd;
-  font-size: 400;
-  background-color: #1591be;
+  color: #ffffff; /* Daha iyi kontrast için renk */
+  font-size: 1rem; /* Hatalı font-size değerini düzeltiyoruz */
+  background-color: #282c34; /* Arka plan rengini değiştiriyoruz */
   padding: 10px;
   border-radius: 4px;
   overflow-x: auto;
@@ -68,7 +71,8 @@ pre {
 
 code {
   font-family: "Courier New", Courier, monospace;
-  background-color: #1591be;
+  background-color: #282c34; /* Daha iyi kontrast için arka plan */
+  color: #ffffff; /* Daha iyi kontrast için renk */
   padding: 2px 4px;
   border-radius: 4px;
 }
