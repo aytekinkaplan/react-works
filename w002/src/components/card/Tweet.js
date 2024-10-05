@@ -23,11 +23,15 @@ const Tweet = ({
   isLiked,
   isRetweeted,
 }) => {
+  const handleClick = (event) => {
+    event.stopPropagation();
+  };
+
   return (
     <div className="tweet" onClick={onTweetClick}>
       <img
         className="tweet-avatar"
-        src={`https://avatars.dicebear.com/api/initials/${username}.svg`}
+        src={imageUrl || `https://via.placeholder.com/48`} // Boş gelirse yedek avatar kullanır
         alt={username}
       />
       <div className="tweet-content">
@@ -43,22 +47,40 @@ const Tweet = ({
           </div>
         )}
         <div className="tweet-actions">
-          <button className="tweet-action reply" onClick={onReply}>
+          <button
+            className="tweet-action reply"
+            onClick={(e) => {
+              handleClick(e);
+              onReply();
+            }}
+          >
             Reply <span>{replies}</span>
           </button>
           <button
             className={`tweet-action retweet ${isRetweeted ? "active" : ""}`}
-            onClick={onRetweet}
+            onClick={(e) => {
+              handleClick(e);
+              onRetweet();
+            }}
           >
             Retweet <span>{retweets}</span>
           </button>
           <button
             className={`tweet-action like ${isLiked ? "active" : ""}`}
-            onClick={onLike}
+            onClick={(e) => {
+              handleClick(e);
+              onLike();
+            }}
           >
             Like <span>{likes}</span>
           </button>
-          <button className="tweet-action share" onClick={onShare}>
+          <button
+            className="tweet-action share"
+            onClick={(e) => {
+              handleClick(e);
+              onShare();
+            }}
+          >
             Share
           </button>
         </div>
@@ -67,4 +89,5 @@ const Tweet = ({
   );
 };
 
+// Burada dışa aktarıyoruz
 export default Tweet;

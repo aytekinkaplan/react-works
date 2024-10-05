@@ -1,9 +1,11 @@
 import "./Footer.css";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="footer">
-      <p>Copyright 2022. All rights reserved.</p>
+      <p>Copyright {currentYear}. All rights reserved.</p>
     </div>
   );
 }

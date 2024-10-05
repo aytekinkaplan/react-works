@@ -8,7 +8,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Main />
+      <div style={{ padding: "20px 0" }}>
+        <Main />
+      </div>
       <Footer />
     </div>
   );
