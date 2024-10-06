@@ -1,3 +1,4 @@
+import "./book.css";
 export default function Book() {
   const books = [
     {
