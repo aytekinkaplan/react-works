@@ -198,7 +198,7 @@ export default function Book() {
       publisher: "Bloomsbury Publishing",
       pages: 757,
       language: "English",
-      image: "https://m.media-amazon.com/images/I/81t8kTh8-bL.jpg",
+      image: "https://m.media-amazon.com/images/I/9149FbTXF2L._SL1500_.jpg",
       description:
         "A continuation of the A Court of Thorns and Roses series, filled with action and romance.",
       rating: 4.8,
@@ -214,7 +214,7 @@ export default function Book() {
       publisher: "Simon & Schuster",
       pages: 320,
       language: "English",
-      image: "https://m.media-amazon.com/images/I/81nlJYNcfbL.jpg",
+      image: "https://m.media-amazon.com/images/I/81GQaR3fjhL._SL1500_.jpg",
       description:
         "A woman uncovers dark secrets after her husband disappears.",
       rating: 4.3,
@@ -230,7 +230,7 @@ export default function Book() {
       publisher: "Ballantine Books",
       pages: 384,
       language: "English",
-      image: "https://m.media-amazon.com/images/I/81JefBx9G0L.jpg",
+      image: "https://m.media-amazon.com/images/I/91NpIOdF5lL._SL1500_.jpg",
       description:
         "Four famous siblings throw an epic party that changes their lives forever.",
       rating: 4.6,
@@ -246,7 +246,7 @@ export default function Book() {
       publisher: "Atria Books",
       pages: 368,
       language: "English",
-      image: "https://m.media-amazon.com/images/I/81AI89mPZML.jpg",
+      image: "https://m.media-amazon.com/images/I/71uUEW95sML._SL1500_.jpg",
       description:
         "A story of a librarian who joins the Resistance during World War II.",
       rating: 4.4,
@@ -262,7 +262,7 @@ export default function Book() {
       publisher: "Atria Books",
       pages: 352,
       language: "English",
-      image: "https://m.media-amazon.com/images/I/81yxoUbQ7cL.jpg",
+      image: "https://m.media-amazon.com/images/I/8115FOgG+jL._SL1500_.jpg",
       description:
         "A quirky novel about a bank robber who takes hostages at an open house.",
       rating: 4.5,
@@ -278,7 +278,7 @@ export default function Book() {
       publisher: "Penguin Books",
       pages: 320,
       language: "English",
-      image: "https://m.media-amazon.com/images/I/91KMbVVZzmL.jpg",
+      image: "https://m.media-amazon.com/images/I/81pZ0R7RtBL._SL1500_.jpg",
       description:
         "A mother's fears about her young daughter take a dark turn.",
       rating: 4.2,
@@ -294,7 +294,7 @@ export default function Book() {
       publisher: "Del Rey",
       pages: 352,
       language: "English",
-      image: "https://m.media-amazon.com/images/I/81CrCP-HZ+L.jpg",
+      image: "https://m.media-amazon.com/images/I/91AU-30bvXS._SL1500_.jpg",
       description:
         "A young woman investigates a haunted house in the Mexican countryside.",
       rating: 4.3,
@@ -310,7 +310,7 @@ export default function Book() {
       publisher: "Tor Books",
       pages: 400,
       language: "English",
-      image: "https://m.media-amazon.com/images/I/91tMZ4wckkL.jpg",
+      image: "https://m.media-amazon.com/images/I/81PaRSYxv0L._SL1500_.jpg",
       description:
         "A charming fantasy about a caseworker sent to a magical orphanage.",
       rating: 4.8,
