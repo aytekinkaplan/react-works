@@ -1,15 +1,18 @@
 /* Genel yapı */
 body {
-  font-family: "Arial", sans-serif;
-  background-color: #f4f4f9;
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f2f5;
   margin: 0;
   padding: 20px;
-  color: #333;
+  color: #2c3e50;
 }
 
 h1 {
   text-align: center;
   color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  letter-spacing: 1.5px;
 }
 
 /* Kitap listesinin genel stili */
@@ -20,61 +23,92 @@ ul {
   padding: 0;
   margin: 0 auto;
   max-width: 1200px;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 /* Kitaplar için kart stilini ayarlama */
 li {
   background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   margin: 20px;
-  padding: 20px;
+  padding: 30px;
   width: 280px;
   text-align: center;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Kart üzerinde hover efekti */
 li:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(241, 196, 15, 0.1);
+  z-index: -1;
+  transition: background 0.3s ease;
+}
+
+li:hover::before {
+  background: rgba(241, 196, 15, 0.3);
 }
 
 /* Kitap kapak resmi */
 li img {
-  width: 100px;
+  width: 120px;
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+li:hover img {
+  transform: scale(1.1);
 }
 
 /* Kitap başlığı */
 li strong {
-  font-size: 1.2em;
+  font-size: 1.4rem;
   color: #34495e;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   display: block;
+  letter-spacing: 1px;
 }
 
 /* Kitap özellikleri */
 li div {
   text-align: left;
-  margin-top: 10px;
+  margin-top: 20px;
+  line-height: 1.6;
 }
 
 /* Önemli alanları belirginleştir */
 li div strong {
   color: #2c3e50;
   display: inline-block;
+  font-weight: 600;
 }
 
 /* Fiyat ve değerlendirme kısmı */
 li div .price {
   color: #e74c3c;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 li div .rating {
   color: #f1c40f;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 /* Mobil uyumluluk */
@@ -85,6 +119,6 @@ li div .rating {
   }
 
   li {
-    width: 90%;
+    width: 100%;
   }
 }
