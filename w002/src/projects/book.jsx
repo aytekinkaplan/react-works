@@ -3,103 +3,64 @@ export default function Book() {
   const books = [
     {
       id: 1,
-      title: "The Fellowship of the Ring",
-      author: "J. R. R. Tolkien",
+      title: "Drop Dead Sisters (The Finch Sisters Book 1)",
+      author: "Amelia Diane Coombs",
       genre: "Fantasy",
-      year: 1954,
-      publisher: "George Allen & Unwin",
-      pages: 423,
+      year: 2018,
+      publisher: "Crown",
+      pages: 304,
       language: "English",
+      image: "https://m.media-amazon.com/images/I/71bFOQxoysL._SL1500_.jpg",
+      description: "",
+      rating: 5,
+      price: 10,
     },
+
     {
       id: 2,
-      title: "The Two Towers",
-      author: "J. R. R. Tolkien",
-      genre: "Fantasy",
-      year: 1954,
-      publisher: "George Allen & Unwin",
-      pages: 352,
+      title: "The Silent Patient",
+      author: "Alex Michaelides",
+      genre: "Thriller",
+      year: 2019,
+      publisher: "Celadon Books",
+      pages: 336,
       language: "English",
+      image: "https://m.media-amazon.com/images/I/91bYsX41DVL.jpg",
+      description: "A woman shoots her husband and never speaks again.",
+      rating: 4.5,
+      price: 15,
     },
+
     {
       id: 3,
-      title: "The Return of the King",
-      author: "J. R. R. Tolkien",
-      genre: "Fantasy",
-      year: 1955,
-      publisher: "George Allen & Unwin",
-      pages: 416,
+      title: "Educated: A Memoir",
+      author: "Tara Westover",
+      genre: "Memoir",
+      year: 2018,
+      publisher: "Random House",
+      pages: 352,
       language: "English",
+      image: "https://m.media-amazon.com/images/I/81WojUxbbFL.jpg",
+      description:
+        "A memoir about a woman who grows up in a strict and abusive household in rural Idaho.",
+      rating: 4.8,
+      price: 12,
     },
+
     {
       id: 4,
-      title: "1984",
-      author: "George Orwell",
-      genre: "Dystopian",
-      year: 1949,
-      publisher: "Secker & Warburg",
-      pages: 328,
+      title: "Becoming",
+      author: "Michelle Obama",
+      genre: "Biography",
+      year: 2018,
+      publisher: "Crown Publishing Group",
+      pages: 448,
       language: "English",
-    },
-    {
-      id: 5,
-      title: "To Kill a Mockingbird",
-      author: "Harper Lee",
-      genre: "Southern Gothic",
-      year: 1960,
-      publisher: "J.B. Lippincott & Co.",
-      pages: 281,
-      language: "English",
-    },
-    {
-      id: 6,
-      title: "Pride and Prejudice",
-      author: "Jane Austen",
-      genre: "Romantic fiction",
-      year: 1813,
-      publisher: "T. Egerton",
-      pages: 279,
-      language: "English",
-    },
-    {
-      id: 7,
-      title: "The Great Gatsby",
-      author: "F. Scott Fitzgerald",
-      genre: "Tragedy",
-      year: 1925,
-      publisher: "Charles Scribner's Sons",
-      pages: 180,
-      language: "English",
-    },
-    {
-      id: 8,
-      title: "Moby Dick",
-      author: "Herman Melville",
-      genre: "Adventure fiction",
-      year: 1851,
-      publisher: "Harper & Brothers",
-      pages: 635,
-      language: "English",
-    },
-    {
-      id: 9,
-      title: "War and Peace",
-      author: "Leo Tolstoy",
-      genre: "Historical fiction",
-      year: 1869,
-      publisher: "The Russian Messenger",
-      pages: 1225,
-      language: "Russian",
-    },
-    {
-      id: 10,
-      title: "Crime and Punishment",
-      author: "Fyodor Dostoevsky",
-      genre: "Philosophical fiction",
-      year: 1866,
-      publisher: "The Russian Messenger",
-      pages: 430,
-      language: "Russian",
+      image: "https://m.media-amazon.com/images/I/81h2gWPTYJL.jpg",
+      description:
+        "The former First Lady of the United States chronicles her life and experiences.",
+      rating: 4.9,
+      price: 20,
     },
   ];
 
@@ -110,6 +71,11 @@ export default function Book() {
         {books.map((book) => (
           <li key={book.id}>
             <div>
+              <img
+                src={book.image}
+                alt={book.title}
+                style={{ width: "100px" }}
+              />
               <strong>{book.title}</strong> - {book.author}
               <br />
               Genre: {book.genre}
@@ -121,6 +87,12 @@ export default function Book() {
               Pages: {book.pages}
               <br />
               Language: {book.language}
+              <br />
+              Description: {book.description}
+              <br />
+              Rating: {book.rating} stars
+              <br />
+              Price: ${book.price}
             </div>
           </li>
         ))}
