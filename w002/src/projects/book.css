@@ -1,59 +1,90 @@
-/* Genel düzen */
+/* Genel yapı */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
   margin: 0;
-  padding: 0;
-}
-
-/* Liste başlığı */
-h1 {
-  text-align: center;
-  margin-top: 20px;
+  padding: 20px;
   color: #333;
 }
 
-/* Listeleme yapısı */
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-/* Kitap bilgileri */
-li {
-  background-color: #fff;
-  margin: 15px 0;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Her kitabın başlığı için stil */
-li strong {
-  font-size: 1.2em;
+h1 {
+  text-align: center;
   color: #2c3e50;
 }
 
-/* Kitap bilgilerini kapsayan blok */
-li div {
-  line-height: 1.6;
-  color: #555;
+/* Kitap listesinin genel stili */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: center;
 }
 
-/* Sayfa mobil uyumluluğu */
-@media (max-width: 600px) {
+/* Kitaplar için kart stilini ayarlama */
+li {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Kart üzerinde hover efekti */
+li:hover {
+  transform: scale(1.05);
+}
+
+/* Kitap kapak resmi */
+li img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Kitap başlığı */
+li strong {
+  font-size: 1.2em;
+  color: #34495e;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Kitap özellikleri */
+li div {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Önemli alanları belirginleştir */
+li div strong {
+  color: #2c3e50;
+  display: inline-block;
+}
+
+/* Fiyat ve değerlendirme kısmı */
+li div .price {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+li div .rating {
+  color: #f1c40f;
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
   ul {
-    padding: 0 15px;
+    flex-direction: column;
+    align-items: center;
   }
 
   li {
-    padding: 10px;
-  }
-
-  li strong {
-    font-size: 1.1em;
+    width: 90%;
   }
 }
