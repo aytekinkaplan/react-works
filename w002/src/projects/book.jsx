@@ -71,7 +71,7 @@ export default function Book() {
       publisher: "Charles Scribner's Sons",
       pages: 180,
       language: "English",
-      image: "https://m.media-amazon.com/images/I/71XUo4QZRFL.jpg",
+      image: "https://m.media-amazon.com/images/I/81ze+dszSwL._SL1500_.jpg",
       description: "A tragic love story set in the Jazz Age.",
       rating: 4.2,
       price: 14,
