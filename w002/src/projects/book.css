@@ -17,6 +17,7 @@ h1 {
 
 /* Kitap listesinin genel stili */
 ul {
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
