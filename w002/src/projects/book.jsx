@@ -316,6 +316,36 @@ export default function Book() {
       rating: 4.8,
       price: 22,
     },
+    {
+      id: 21,
+      title: "The House in the Cerulean Sea",
+      author: "TJ Klune",
+      genre: "Fantasy",
+      year: 2020,
+      publisher: "Tor Books",
+      pages: 400,
+      language: "English",
+      image: "https://m.media-amazon.com/images/I/81PaRSYxv0L._SL1500_.jpg",
+      description:
+        "A charming fantasy about a caseworker sent to a magical orphanage.",
+      rating: 4.8,
+      price: 22,
+    },
+    {
+      id: 21,
+      title: "The House in the Cerulean Sea",
+      author: "TJ Klune",
+      genre: "Fantasy",
+      year: 2020,
+      publisher: "Tor Books",
+      pages: 400,
+      language: "English",
+      image: "https://m.media-amazon.com/images/I/81PaRSYxv0L._SL1500_.jpg",
+      description:
+        "A charming fantasy about a caseworker sent to a magical orphanage.",
+      rating: 4.8,
+      price: 22,
+    },
   ];
 
   return (
